@@ -112,8 +112,8 @@ new Vue({
       if (newInstrument.brand === ""){
         mishaps.push("Please enter a brand");
       }
-      if (errors.length > 0){
-        alert(errors);
+      if (mishaps.length > 0){
+        alert(mishaps);
       }else{
         this.instruments.push(newInstrument);
         this.showCreateModal = false;
